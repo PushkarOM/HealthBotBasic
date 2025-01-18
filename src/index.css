@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  *{
+    @apply box-border;
+  }
+  body{
+    @apply box-border m-0 p-0 h-screen w-screen;
+  }
+
+  #root{
+    @apply box-border m-0 p-0 h-screen w-screen overflow-x-hidden;  
+  }
+  li{
+    @apply before:content-[''] before:inline-block before:w-2 before:h-2 before:rounded-full before:mr-2 before:bg-[#61DAFB];
+  }
+
+}
