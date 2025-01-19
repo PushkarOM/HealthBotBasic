@@ -80,6 +80,17 @@ export default {
       }
     }
   },
+  safelist: [
+    {
+      pattern: /(flex|justify|items|content)-(start|center|end|between|around)/, // Matches flex utility classes
+    },
+    {
+      pattern: /flex-(col|row|wrap|nowrap|reverse)/, // Matches flex direction and wrap classes
+    },
+    {
+      pattern: /gap-\d+/, // Matches gap utilities (e.g., gap-2, gap-4)
+    },
+  ],
   plugins: [
     require("tailwindcss-animate"),
     require("@tailwindcss/typography"),
